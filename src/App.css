@@ -3,7 +3,7 @@
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 10vmin;
   pointer-events: none;
 }
 
@@ -12,14 +12,67 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
-
+.todo-wrapper {
+  background: lightblue;
+  position: relative;
+  height: 40px;
+  z-index: 99;
+  margin-top: 0.5rem;
+}
+.done {
+  background: whitesmoke;
+}
+span.mr,
+span.delete {
+  font-size: 0.8rem;
+  cursor: pointer;
+  z-index: 1000;
+}
+.actions {
+  position: absolute;
+  width: 100px;
+  right: 10px;
+  top: 5px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #61dafb;
+}
+.todo-wrapper span.delete {
+  width: 20px;
+  height: 20px;
+  color: white;
+  background-color: red;
+  padding: 2px;
+  border-radius: 50%;
+}
+.todo-wrapper span.mr {
+  width: 20px;
+  height: 20px;
+  color: white;
+  background-color: green;
+  padding: 2px;
+  border-radius: 50%;
+}
+.form-container {
+  width: 60vw;
+  height: 80vh;
+  background: teal;
+  margin-top: 3rem;
+  margin-left: 5rem;
+  padding: 1rem;
+}
+.todo-list {
+  text-align: none;
+  list-style: none;
+}
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  min-height: 10vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  /* align-items: center; */
+  /* justify-content: center; */
   font-size: calc(10px + 2vmin);
   color: white;
 }
